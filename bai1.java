@@ -1,19 +1,20 @@
+package JAVA.T4_hdt;
 import java.util.Scanner;
 
 public class bai1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap vao mot so nguyen: ");
+        int so = sc.nextInt();
 
-        System.out.print("Nhap mot so nguyen: ");
-        int n = scanner.nextInt();
+        if (so > 0) {
+            System.out.println(so + " la so duong");
+        } else if (so < 0) {
+            System.out.println(so + " la so am");
+        } else {
+            System.out.println("So vua nhap la 0");
+        }
 
-        if (n > 0)
-            System.out.println(n + " la so duong.");
-        else if (n < 0)
-            System.out.println(n + " la so am.");
-        else
-            System.out.println("So bang 0.");
-
-        scanner.close();
+        sc.close();
     }
 }
